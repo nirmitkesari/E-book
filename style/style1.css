@@ -1,0 +1,300 @@
+*
+{
+   margin: 0;
+   padding: 0;
+   background-color: whitesmoke;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #333;
+}
+
+.logo a {
+    color: rgb(32, 8, 8);
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color:grey;
+    color:wheat;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-bar button:hover {
+    background-color: #888;
+}
+
+.login a {
+    color: rgb(24, 7, 7);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 15px;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+.login a:hover {
+    background-color: grey;
+}
+
+header2 {
+    background-color: #282828; /* Background color for the header */
+    padding: 15px 0;
+}
+
+.tab-navbar {
+    text-align: left;
+    /* background-color: #444; Background color for the navbar */
+    padding: 10px 0;
+}
+
+.tab-menu {
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.tab-menu li {
+    margin: 0 15px;
+}
+
+.tab-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+    background-color: #555; /* Background color for each tab */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.tab-menu li a:hover {
+    background-color: #777; /* Hover color for the tabs */
+}
+
+.tab-menu li a.active {
+    background-color: #ff5722; /* Active tab background color */
+}
+
+.book-gallery 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+
+/* Style for the box container */
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    text-decoration: none;
+}
+
+/* Style for each individual box */
+.box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the boxes */
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the headings inside each box */
+.box h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Style for the paragraphs inside each box */
+.box p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Style for the buttons */
+.box button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button
+{
+    text-decoration: none;
+}
+
+/* Hover effect for the buttons */
+.box button:hover {
+    background-color: #666;
+}
+
+/* Responsive design: Stack boxes on smaller screens */
+@media (max-width: 768px) {
+    .box {
+        width: 100%;
+    }
+}
+
+
+
+
+footer {
+    background-color: #e8e8e8;
+    padding: 30px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-box {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-box h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.footer-box ul {
+    list-style-type: none;
+}
+
+.footer-box ul li {
+    margin-bottom: 10px;
+}
+
+.footer-box ul li a {
+    color: #888;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-box ul li a:hover {
+    color: #000;
+}
+
+.footer-box form {
+    display: flex;
+}
+
+.footer-box form input[type="email"] {
+    padding: 8px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.footer-box form button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer-box form button:hover {
+    background-color: #0056b3;
+}
+
+.social-media i {
+    margin-right: 8px;
+}
+
+
+.copyright-footer {
+    background-color: #333;
+    color:black;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.copyright-footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.company-name {
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    color: #ff4500; /* Choose any color */
+    text-decoration: line-through;
+}
+
+.company-name {
+    font-family: 'Georgia', serif;
+    font-size: 40px;
+    color: #000;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    
+}
+
+.company-name {
+    font-size: 48px;
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(235, 7, 98), #383b3f);
+    -webkit-background-clip: text;
+    color: transparent;
+    
+}
+
+
